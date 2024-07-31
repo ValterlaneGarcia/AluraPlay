@@ -1,0 +1,16 @@
+{
+    "name": "dbseller/alura-play",
+    "description": "Repositor de video do alura",
+    "autoload": {
+        "psr-4": {
+            "Dbseller\\AluraPlay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Valter Garcia",
+            "email": "valterlanegarcia@gmail.com"
+        }
+    ],
+    "require": {}
+}
