@@ -1,29 +1,28 @@
-<?php 
-namespace Dbseller\AluraPlay\Entity;
-use InvalidArgumentException;
+<?php
 
-class Video 
+declare(strict_types=1);
+
+namespace Dbseller\AluraPlay\Entity;
+
+class Video
 {
-    public ?int $id;
-    public  string $url;
+    public int $id;
+    public string $url;
     public string $title;
 
-    public function __construct( string $url, string $title )
-    {
+    public function __construct(string $url, string $title) {
         $this->setUrl($url);
+        $this->title = $title;
     }
-
 
     private function setUrl(string $url)
     {
-        if(filter_var($url, FILTER_VALIDATE_URL) === false)
-        {
-            throw new InvalidArgumentException();
+        if (filter_var($url, FILTER_VALIDATE_URL) === false) {
+            throw new \InvalidArgumentException();
         }
 
         $this->url = $url;
     }
-
 
     public function setId(int $id): void
     {

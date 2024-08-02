@@ -1,5 +1,5 @@
 <?php 
-namespace Dbseller\AluraPlay\Infra\Persistence;
+namespace Dbseller\AluraPlay\Controller;
 
 use PDO;
 use PDOException;
