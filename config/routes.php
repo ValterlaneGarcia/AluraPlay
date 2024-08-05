@@ -11,4 +11,8 @@ return [
     'GET|/remover-video' => \Dbseller\AluraPlay\Controller\DeleteVideoController::class,
     'GET|/login' => \Dbseller\AluraPlay\Controller\LoginFormController::class, 
     'POST|/login' => \Dbseller\AluraPlay\Controller\LoginController::class,
+    'GET|/logout' => \Dbseller\AluraPlay\Controller\LogoutController::class,
+    'GET|/videos-json' => \Dbseller\AluraPlay\Controller\JsonVideoListController::class,
+    'POST|/videos' => \Dbseller\AluraPlay\Controller\NewJsonVideoController::class,
+
 ];
